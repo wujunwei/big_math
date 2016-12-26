@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("big_math", "for big_math support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("big_math", "enable big_math support", "no");
+
+if (PHP_BIG_MATH != "no") {
+	EXTENSION("big_math", "big_math.c");
+}
+
